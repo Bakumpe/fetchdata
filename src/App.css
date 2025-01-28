@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#b5a1cb, #819163);
+  width: 100%;
+  height: 100vh;  
+}
+nav{
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0;
+  margin: auto 50px;
+  border-bottom: 4px solid #819163;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+ul li:hover{
+  height: 40px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.posts{
+  padding: 10px;
+  font-size: 2em;
+}
+.bodyforPost{
+  height: 100vh;
+}
+.bodyPost{
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+.postBody{  
+  width: 90%;
+  height: 300px;
+  background: rgba(210, 200, 100, 0.5);
+  border: 2px solid ghostwhite;
+  border-radius: 20px;
+}
+.postBody h1{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+}
+.postBody p{
+  margin: auto;
+  padding: 10px;
+  font-size: 35px;
+}
+.buttons{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  cursor: pointer;
+}
+.buttons button{
+  width: 30%;
+  height: 50px;
+  color: rgb(22, 21, 20);
+  font-size: 30px;
+  background: linear-gradient(#819163, #b5a1cb);
+}
