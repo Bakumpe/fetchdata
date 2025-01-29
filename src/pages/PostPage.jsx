@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 
+
 function PostPage() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
@@ -18,19 +19,7 @@ function PostPage() {
     fetchPosts();
   }, []);
 
-  const handNext = () => {
-    //Assuming post IDs are sequential
-    const nextId = parseInt(id) + 1;
-    window.location.href = `/posts/${nextId}`;
-  };
-
-  const handlePrev = () => {
-    //Assuming post IDs are sequential
-    if(parseInt(id) > 1){
-        const prevId = parseInt(id) - 1;
-        window.location.href = `/posts/${prevId}`
-    }
-  };
+ 
   return (
     <>
       <div className="bodyforPost">
@@ -44,11 +33,8 @@ function PostPage() {
             <h1>Loading......</h1>
           )}
         </div>
-        <div className="buttons">
-          <button onClick={handNext}>Next</button>
-          <button onClick={handlePrev}>Prev</button>
-        </div>
       </div>
+      
     </>
   );
 }
